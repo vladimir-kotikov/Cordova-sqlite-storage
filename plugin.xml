@@ -90,11 +90,9 @@
         </js-module>
 
         <!-- Thanks to AllJoyn-Cordova / cordova-plugin-alljoyn for guidance: -->
-        <framework src="src/windows/SQLite3-Win-RT/SQLite3/SQLite3.UWP/SQLite3.UWP.vcxproj" custom="true" type="projectReference" versions="10.*" />
-        <!-- Windows 8.1 / Windows Phone 8.1 not tested, not supported in this version branch:
-        <framework src="src/windows/SQLite3-Win-RT/SQLite3/SQLite3.Windows/SQLite3.Windows.vcxproj" custom="true" type="projectReference" target="windows" versions="8.1" />
-        <framework src="src/windows/SQLite3-Win-RT/SQLite3/SQLite3.WindowsPhone/SQLite3.WindowsPhone.vcxproj" custom="true" type="projectReference" target="phone" versions="8.1" />
-         -->
+        <framework src="lib/windows/x86/SQLite3.winmd" target-dir="x86" implementation="lib/windows/x86/SQLite3.UWP.dll" custom="true" versions="10.*" arch="x86" />
+        <framework src="lib/windows/x64/SQLite3.winmd" target-dir="x64" implementation="lib/windows/x64/SQLite3.UWP.dll" custom="true" versions="10.*" arch="x64" />
+        <framework src="lib/windows/ARM/SQLite3.winmd" target-dir="ARM" implementation="lib/windows/ARM/SQLite3.UWP.dll" custom="true" versions="10.*" arch="arm" />
     </platform>
 
 </plugin>
