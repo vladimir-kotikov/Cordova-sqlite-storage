@@ -89,6 +89,8 @@
             <merges target="" />
         </js-module>
 
+        <lib-file src="Microsoft.VCLibs, Version=14.0" />
+
         <!-- Thanks to AllJoyn-Cordova / cordova-plugin-alljoyn for guidance: -->
         <framework src="lib/windows/x86/SQLite3.winmd" target-dir="x86" implementation="lib/windows/x86/SQLite3.UWP.dll" custom="true" versions="10.*" arch="x86" />
         <framework src="lib/windows/x64/SQLite3.winmd" target-dir="x64" implementation="lib/windows/x64/SQLite3.UWP.dll" custom="true" versions="10.*" arch="x64" />
